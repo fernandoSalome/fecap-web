@@ -7,6 +7,7 @@ namespace Fecap.Aula01.Web.Models
 {
     public class Pastel
     {
+        public int Id { get; set; }
         public string Sabor { get; set; }
         public decimal Preco { get; set; }
         public string Tamanho { get; set; }

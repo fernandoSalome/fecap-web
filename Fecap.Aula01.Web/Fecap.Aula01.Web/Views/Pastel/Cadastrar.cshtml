@@ -5,14 +5,16 @@
 
 <h2>Cadastrar</h2>
 
-<form>
+@TempData["msg"] <!--Exibe a mensagem do controller -->
+
+<form action="/Pastel/Cadastrar" method="post">
     <div class="form-group">
         <label for="id-sabor">Sabor</label>
         <input type="text" name="sabor" id="id-sabor" class="form-control"/>
     </div>
     <div class="form-group">
         <label for="id-observacoes">Observações</label>
-        <textarea class="form-control" id="id-observacoes" name="observacoes" cols="50" rows="5"></textarea>
+        <textarea class="form-control" id="id-observacoes" name="observacao" cols="50" rows="5"></textarea>
     </div>
     <div class="form-group">
         <label for="id-preco">Preço</label>
