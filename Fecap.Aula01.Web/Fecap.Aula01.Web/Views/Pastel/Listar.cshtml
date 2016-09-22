@@ -1,0 +1,25 @@
+﻿@model List<Fecap.Aula01.Web.Models.Pastel>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Lista de Pastéis</h2>
+
+<table class="table">
+    <tr>
+        <th>Sabor</th>
+        <th>Observação</th>
+        <th>Preço</th>
+        <th>Tamanho</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Sabor</td>
+            <td>@item.Observacao</td>
+            <td>@item.Preco</td>
+            <td>@item.Tamanho</td>
+        </tr>
+    }
+</table>
+

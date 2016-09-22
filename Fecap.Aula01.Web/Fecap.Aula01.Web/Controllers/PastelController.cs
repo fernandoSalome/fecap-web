@@ -12,6 +12,15 @@ namespace Fecap.Aula01.Web.Controllers
     {
         private Banco banco = new Banco();
 
+        [HttpGet]//Listar os pastéis
+        public ActionResult Listar()
+        {
+            //Busca os pastéis cadastrados no banco de dados
+            var lista = banco.Pasteis.ToList();
+            //Passa a lista para a página
+            return View(lista);
+        }
+
         [HttpGet] //Abre a tela com o formulário
         public ActionResult Cadastrar()
         {
